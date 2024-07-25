@@ -1,4 +1,5 @@
 import {moduleId} from "./settings.js";
+
 export function showPatreonDialog(titleSuffix) {
     let dialogContent = `<p>This is a Sheet-only-PLUS feature.</p> 
                 <p>Please visit: <a href="https://www.patreon.com/SyriousWorkshop" target="_blank">Syrious' Workshop on Patreon</a></p>`;
@@ -35,7 +36,7 @@ export function enableCanvasDialog() {
     let dialogContent = `<p>Sheet-Only is not active for you but your canvas is disabled.</p> 
                 <p>Should the canvas be activated for you?</p>`;
 
-     new Dialog({
+    new Dialog({
         title: "Enable canvas?",
         content: dialogContent,
         buttons: {
@@ -59,6 +60,6 @@ export function enableCanvasDialog() {
                 }
             }
         },
-         default: "yes",
+        default: "yes",
     }).render(true, {width: 500})
 }

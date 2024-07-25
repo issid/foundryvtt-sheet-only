@@ -79,6 +79,12 @@ Hooks.on('renderActorSheet',
         getTokenizerImage();
 
         dnd5eEditSlider(app);
+
+        // move classes
+        $(".sheet-body").before($(".ability-scores"));
+        $(".tabs").before($(".sheet-header-buttons"));
+        $(".xp-label").before($(".sheet-only-sheet.dnd5e2.sheet.actor.character .sheet-header > .left .document-name"));
+
     })
 
 
